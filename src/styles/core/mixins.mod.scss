@@ -1,0 +1,50 @@
+@import "./colors.mod.scss";
+@mixin flex {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+@mixin navigatorItem {
+    margin: 0px 10px;
+    color: $text;
+    text-decoration: none;
+}
+
+@mixin social {
+    @include Button;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    &:hover {
+        box-shadow: 0 2px 16px 0 rgba(0,0,0,.24), 0 17px 50px 0 rgba(0,0,0,.19);
+    }
+    background-color: $primary;
+    transition-duration: .4s;
+    background-size: 16px auto;
+    margin: 0px 10px;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+}
+
+@mixin Button {
+    background-color: $accent;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        box-shadow: 0 2px 16px 0 rgba(0,0,0,.24), 0 17px 50px 0 rgba(0,0,0,.19);
+    }
+}
+
+@mixin field {
+    background: $primary;
+    padding: 5px; 
+    color: #fff;
+    border-radius: 10px;
+    outline: none;
+    &:focus {
+        border-color: #fff;
+    }
+}

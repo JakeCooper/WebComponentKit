@@ -1,0 +1,26 @@
+@import "~styles/core/colors.mod.scss";
+@import "~styles/core/mixins.mod.scss";
+
+.section {
+    width: 100%;
+    display: inline-block;
+}
+
+.sectionContent {
+    height: 100%;
+    width: 100%;
+}
+
+.primary {
+    background-color: $primary;
+}
+
+.secondary {
+    background-color: $accent;
+}
+
+.center {
+    @include flex;
+    justify-content: center;
+    text-align: center;
+}

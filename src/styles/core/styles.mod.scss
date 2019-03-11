@@ -1,0 +1,147 @@
+@import "./colors.mod.scss";
+@import "./mixins.mod.scss";
+// Export Above
+
+::-webkit-scrollbar {
+    // TODO: Style scrollbar
+}
+
+:global(body) {
+    color: $text;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.38;
+    font-weight: 300;
+}
+
+:global(h1) {
+    font-size: 56px;
+    display: inline-block;
+}
+
+:global(h2) {
+    font-size: 39px;
+    display: inline-block;
+}
+
+:global(h3) {
+    font-size: 22px;
+    display: inline-block;
+}
+
+:global(a) {
+    color: $text;
+    text-decoration: none; /* no underline */
+}
+
+::selection {
+    background: $primary;
+}
+
+#id {
+    height: 100%;
+}
+
+:global(#root) {
+    width: 100%;
+}
+
+@media only screen and (max-width: 760px) {
+    :global(#root) {
+        overflow: scroll;
+        width: unset;
+    }
+    .content {
+        flex-direction: column;
+    }
+
+    .typer {
+        font-size: 16px;
+    }
+
+    .button {
+        margin: 0 auto;
+    }
+}
+
+.centered {
+    @include flex;
+    height: 50vh;
+}
+
+.main {
+    margin: 50px;
+}
+
+.lower {
+    @include flex;
+    background-color: $accent;
+    height: 10vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.header {
+    margin: 30px;
+    align-items: center;
+    display: flex;
+}
+
+.routerContainer {
+    width: 100%;
+    display: inline-block;
+    height: 90vh;
+    background-color: $primary;
+}
+
+.flexContent {
+    @include flex;
+    height: 100%;
+}
+
+.content {
+    @include flex;
+}
+
+.navigator {
+    list-style-type: none;
+    a {
+        @include navigatorItem;
+    }
+}
+
+.logo {
+    margin: 15px;
+    width: 100px;
+    height: auto;
+}
+
+.input {
+    @include field;
+    border: 2px solid #fff;
+}
+
+.field {
+    @include field;
+    border: none;
+}
+
+.leftHeader {
+    @include flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.rightHeader {
+    @include flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.userInfo {
+    margin: 20px;
+}
+
+.logout {
+    margin: 20px;
+}

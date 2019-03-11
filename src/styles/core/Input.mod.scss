@@ -1,0 +1,15 @@
+@import "~styles/core/styles.mod.scss";
+
+.actionBar {
+    width: 100%;
+}
+
+.addIcon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.darklaunchList {
+    overflow-y: auto;
+    max-height: 67vh;
+}

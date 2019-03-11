@@ -1,0 +1,20 @@
+// tsconfig.json
+{
+    "compilerOptions": {
+      "jsx": "react",
+      "esModuleInterop": true,
+      "experimentalDecorators": true,
+      "baseUrl": "./src",
+      "paths": {
+        "javascript/*": ["javascript/*"],
+        "components/*": ["javascript/components/*"],
+        "core/*": ["javascript/core/*"],
+        "modals/*": ["javascript/modals/*"],
+        "pages/*": ["javascript/pages/*"],
+        "styles/*": ["styles/*"],
+        "stores/*": ["stores/*"],
+        "assets/*": ["assets/*"],
+        "types/*": ["type/*"]
+      }
+    }
+  }

@@ -1,0 +1,27 @@
+@import "~/styles/core/colors.mod.scss";
+
+@mixin Button {
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    &:hover {
+        box-shadow: 0 2px 16px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+    }
+}
+
+.primary {
+    background-color: $accent;
+}
+
+.secondary {
+    background-color: $primary;
+}
+
+.button {
+    @include Button;
+    padding: 15px 20px;
+    border-radius: 3px;
+    width: 176px;
+}
