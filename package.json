@@ -1,16 +1,16 @@
 {
-    "name": "WebComponentKit",
-    "version": "0.1.0",
+    "name": "webcomponentkit",
+    "version": "0.2.1",
     "description": "Component kit for react web components",
-    "main": "./src/WebComponentKit.tsx",
+    "main": "./dist/WebComponentKit.js",
     "alias": {
         "==== COMMENT ====": "MIRRORED IN TSCONFIG.jSON",
-        "javascript": "~/src/javascript",
-        "core": "~/src/javascript/core",
-        "styles": "~/src/styles"
+        "core": "./src/javascript/core",
+        "styles": "./src/styles"
     },
     "scripts": {
-        "build": "parcel build ./src/WebComponentKit.tsx"
+        "build": "parcel build ./src/WebComponentKit.tsx",
+        "deploy": "npm run build && npm publish"
     },
     "devDependencies": {
         "cssnano": "^4.1.10",
@@ -19,6 +19,7 @@
     },
     "dependencies": {
         "assemble": "^0.3.83",
+        "classnames": "^2.2.6",
         "grunt": "^0.4.5",
         "react": "^16.8.4",
         "styles": "^0.2.1"
