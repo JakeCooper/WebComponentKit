@@ -1,3 +1,4 @@
+# Modal
 
 Modal is an braindead simple framework for rendering modals. It takes one prop: The component you want to render in the modal.
 
@@ -6,6 +7,8 @@ That's it. It's that simple.
 ## Usage
 
 ```
+import { Modal } from 'WebComponentKit';
+
 <Modal component={MyComponent}>
     <Button>Click me!</Button>
 </Modal>
